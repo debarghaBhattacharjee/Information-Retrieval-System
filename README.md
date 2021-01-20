@@ -2,10 +2,10 @@
 A simple Information Retrieval System used to retrieved documents relevant to a query given by the user.
 
 **Created by-** 
-	*Debargha Bhattacharjee*
-	*CS19S028, MS Scholar*
-	*Department of Computer Science and Engineering*
-	*IIT Madras*
+	*Debargha Bhattacharjee* <br>
+	*CS19S028, MS Scholar* <br>
+	*Department of Computer Science and Engineering* <br>
+	*IIT Madras* <br>
 	
 ## Instructions
 Please follow the steps given below-
