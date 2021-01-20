@@ -1,12 +1,6 @@
 # Information_Retrieval_System
 A simple Information Retrieval System used to retrieved documents relevant to a query given by the user.
 
-**Created by-** 
-	*Debargha Bhattacharjee* <br>
-	*CS19S028, MS Scholar* <br>
-	*Department of Computer Science and Engineering* <br>
-	*IIT Madras* <br>
-	
 ## Instructions
 Please follow the steps given below-
 
@@ -18,3 +12,10 @@ Please follow the steps given below-
 	(d) Execute- vsm_models_performance_comparison.py
 3. TESTING PHASE- Let the query for which yu want to retrieve documents be "xyz".
 	(a) Execute- retrieve_docs_for_input_query.py -custom "xyz"
+	
+**Created by-** <br>
+	*Debargha Bhattacharjee* <br>
+	*CS19S028, MS Scholar* <br>
+	*Department of Computer Science and Engineering* <br>
+	*IIT Madras* <br>
+	
