@@ -18,5 +18,5 @@ Please follow the steps given below-
 	*CS19S028, MS Scholar* <br>
 	*Department of Computer Science and Engineering* <br>
 	*IIT Madras* <br>
-	*CS6741 Natural Language Processing* <br>
+	*CS6370 Natural Language Processing* <br>
 	
