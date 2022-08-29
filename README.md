@@ -5,13 +5,13 @@ A simple Information Retrieval System used to retrieved documents relevant to a 
 Please follow the steps given below-
 
 1. Copy 'Cranfield' (which contains training documents and queries for this project) and 'source_code' to the same directory (if not already done).
-2. **TRAINING-** Run the scripts in the following order-
-	(a) Execute- preprocess_docs_and_queries.py
-	(b) Execute- ranked_list_lsi_models_different_topics.py
-	(c) Execute- performance_comparison_lsi_models_different_topics.py
-	(d) Execute- vsm_models_performance_comparison.py
-3. **TESTING-** Let the query for which yu want to retrieve documents be "xyz".
-	(a) Execute- retrieve_docs_for_input_query.py -custom "xyz"
+2. **TRAINING-** Run the scripts in the following order- <br>
+	(a) Execute- preprocess_docs_and_queries.py <br>
+	(b) Execute- ranked_list_lsi_models_different_topics.py <br>
+	(c) Execute- performance_comparison_lsi_models_different_topics.py <br>
+	(d) Execute- vsm_models_performance_comparison.py <br>
+3. **TESTING-** Let the query for which yu want to retrieve documents be "xyz". <br>
+	(a) Execute- retrieve_docs_for_input_query.py -custom "xyz" <br>
 	
 **Created by-** <br>
 	*Debargha Bhattacharjee* <br>
