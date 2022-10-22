@@ -66,7 +66,7 @@ ranks, the MAP was maximum for $k = 5$. However, as we move to higher ranks (spe
 </div>
 From the above figure, we can see that the search engine performs quite well at lower ranks (*i.e.*, top few retrieved documents are very good). However, the the performance decreases gradually as we move to higher ranks (i.e., include more documents in our calculation). This basically means that the top 3 or 4 documents retrieved by the search engine are quite well as compared to the top 9 or 10 documents.
 
-## Instructions
+## Instructions to Reproduce Code
 Please follow the steps given below-
 
 1. Copy 'Cranfield' (which contains training documents and queries for this project) and 'source_code' to the same directory (if not already done).
