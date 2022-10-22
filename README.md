@@ -6,7 +6,7 @@ The goal of an IR system is to retrieve documents with information relevant to a
 
 <div align="center">
     <p>
-        <img src="images/classic_search_model.png" alt="Classic Search Model" width=50%, height=55%>
+        <img src="images/classic_search_model.png" alt="Classic Search Model" width=60%, height=80%>
     </p>  
 </div>
 
