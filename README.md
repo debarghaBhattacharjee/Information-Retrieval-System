@@ -1,5 +1,5 @@
 # Information-Retrieval-System
-In this project, we build a simple search engine that retrieves appropriate documents corresponding to a given query by considering the semantic relatedness between the texts of the documents and the query. We study how to represent documents and queries as vectors in various representational spaces so that the documents most similar to any partcular query can be retrieved using an appropriate similarity measure. We also test the search engine's performance on a benchmark document collection and set of questions and present the results for the same.
+In this project, we build a simple search engine that retrieves appropriate documents corresponding to a given query by considering the semantic relatedness between the texts of the documents and the query. We study how to represent documents and queries as vectors in various representational spaces so that the documents most similar to any partcular query can be retrieved using an appropriate similarity measure. We also test the search engine's performance on a benchmark document collection (**the Cranfield dataset**) and set of questions and present the results for the same.
 
 ## Some Basics of Informattion Retrieval
 The goal of an IR system is to retrieve documents with information relevant to a user's information need and, consequently, help a user complete a task.
@@ -27,14 +27,14 @@ In this project, we represent the queries and the documents using two specific m
 - Latent Semantic Indexing (LSI) Model
 
 ### The TF-IDF Model
-Here, we specifically represent the documents and the queries using the TF-IDF model, which is one of the most popular Vector Spce Models used for such tasks. I have discussed the process of creation of tf-idf vectors in the [SPAM-or-HAM] (https://github.com/debarghaBhattacharjee/SPAM-or-HAM) project.
+Here, we specifically represent the documents and the queries using the TF-IDF model, which is one of the most popular Vector Space Models used for such tasks. I have discussed the process of creation of tf-idf vectors in the [SPAM-or-HAM](https://github.com/debarghaBhattacharjee/SPAM-or-HAM) project.
 
 ### The LSI Model
 The Tf-IDF has certain limitations which leads to the *term-mismatch* problem.SOme of these limitations:
 - Ignoring the relationship between different words in vocabulary
 - Ignoring words having same orthographic forms but different meanings
 
-In order to overcome the problems associated with the different vector space models (such as the bag-of-words model and tf-idf model) and capture the word meanings and relatedness, we use the Latent Semantic Indexing (LSI) model ([Deerwester's et al., 1990] (http://lsa.colorado.edu/papers/JASIS.lsi.90.pdf)).
+In order to overcome the problems associated with the different vector space models (such as the bag-of-words model and tf-idf model) and capture the word meanings and relatedness, we use the Latent Semantic Indexing (LSI) model ([Deerwester's et al., 1990](http://lsa.colorado.edu/papers/JASIS.lsi.90.pdf)).
 
 LSI transforms the document and query vectors from one space (*i.e.*, the word space) to another (*i.e.*, the concept space). It helps us to identify patterns and relationships between the different terms (i.e., words in the documents) and topics. Based on those patterns, LSI produces a set of concepts related to the documents and terms and finally expresses the documents and the queries in the concept space. We use Singular Value Decomposition (SVD) to create the concept space, which generally has a lower dimension than the word space.
 
@@ -46,6 +46,7 @@ LSI transforms the document and query vectors from one space (*i.e.*, the word s
         <img src="images/map@10.png" alt="MAP at Rank 10" width=60%, height=50%>
     </p>  
 </div>
+From the above figure, we can see that the mean average precision initially increases as we increase the value of $$k$$ and reaches the maximum value somewhere between the range 300-500. Then it starts to decrease and finally and flattens out at around 2000.
 
 ### MAP vs. LSI model dimesnionality
 <div align="center">
@@ -53,6 +54,9 @@ LSI transforms the document and query vectors from one space (*i.e.*, the word s
         <img src="images/map_vs_dimensionality.png" alt="MAP vs. LSI model dimensionality" width=60%, height=50%>
     </p>  
 </div>
+When we plot the MAP values at different ranks for different values of $$k$$, we can see that the best result is seen when k is within 300 to 500. we can see that at lower
+ranks, the MAP was maximum for k = 5. However, as we move to higher ranks (specifically, rank 5 or more), we can see that the performance of the search engine is same for both $$k = 300$$ and $$k = 500$$.
+
 
 ### Scores obtained by search engine from different metrics
 <div align="center">
@@ -60,6 +64,7 @@ LSI transforms the document and query vectors from one space (*i.e.*, the word s
         <img src="images/search_engine-metrics.png" alt="Scores corresponding to differnt metrics" width=60%, height=50%>
     </p>  
 </div>
+From the above figure, we can see that the search engine performs quite well at lower ranks (*i.e.*, top few retrieved documents are very good). However, the the performance decreases gradually as we move to higher ranks (i.e., include more documents in our calculation). This basically means that the top 3 or 4 documents retrieved by the search engine are quite well as compared to the top 9 or 10 documents.
 
 ## Instructions
 Please follow the steps given below-
