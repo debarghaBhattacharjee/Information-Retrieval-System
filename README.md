@@ -43,7 +43,7 @@ LSI transforms the document and query vectors from one space (*i.e.*, the word s
 ### Mean Average Precision (MAP) at rank 10 for different dimensionality of the LSI model
 <div align="center">
     <p>
-        <img src="images/map@10.png" alt="MAP at Rank 10" width=640px, height=480px>
+        <img src="images/map@10.png" alt="MAP at Rank 10" width=600px, height=400px>
     </p>  
 </div>
 From the above figure, we can see that the mean average precision initially increases as we increase the value of $k$ and reaches the maximum value somewhere between the range 300-500. Then it starts to decrease and finally and flattens out at around 2000.
@@ -51,7 +51,7 @@ From the above figure, we can see that the mean average precision initially incr
 ### MAP vs. LSI model dimesnionality
 <div align="center">
     <p>
-        <img src="images/map_vs_dimensionality.png" alt="MAP vs. LSI model dimensionality" width=640px, height=480px>
+        <img src="images/map_vs_dimensionality.png" alt="MAP vs. LSI model dimensionality" width=600px, height=400px>
     </p>  
 </div>
 When we plot the MAP values at different ranks for different values of $k$, we can see that the best result is seen when $k$ is within 300 to 500. we can see that at lower
@@ -61,7 +61,7 @@ ranks, the MAP was maximum for $k = 5$. However, as we move to higher ranks (spe
 ### Scores obtained by search engine from different metrics
 <div align="center">
     <p>
-        <img src="images/search_engine-metrics.png" alt="Scores corresponding to differnt metrics" width=640px, height=480px>
+        <img src="images/search_engine-metrics.png" alt="Scores corresponding to differnt metrics" width=600px, height=400px>
     </p>  
 </div>
 From the above figure, we can see that the search engine performs quite well at lower ranks (*i.e.*, top few retrieved documents are very good). However, the the performance decreases gradually as we move to higher ranks (i.e., include more documents in our calculation). This basically means that the top 3 or 4 documents retrieved by the search engine are quite well as compared to the top 9 or 10 documents.
