@@ -30,7 +30,7 @@ In this project, we represent the queries and the documents using two specific m
 Here, we specifically represent the documents and the queries using the TF-IDF model, which is one of the most popular Vector Space Models used for such tasks. I have discussed the process of creation of tf-idf vectors in the [SPAM-or-HAM](https://github.com/debarghaBhattacharjee/SPAM-or-HAM) project.
 
 ### The LSI Model
-The Tf-IDF has certain limitations which leads to the *term-mismatch* problem.SOme of these limitations:
+The TF-IDF has certain limitations which leads to the *term-mismatch* problem. Some of these limitations:
 - Ignoring the relationship between different words in vocabulary
 - Ignoring words having same orthographic forms but different meanings
 
