@@ -1,4 +1,4 @@
-# Information-Retrieval-System
+# Information Retrieval System
 In this project, we build a simple search engine that retrieves appropriate documents corresponding to a given query by considering the semantic relatedness between the texts of the documents and the query. We study how to represent documents and queries as vectors in various representational spaces so that the documents most similar to any partcular query can be retrieved using an appropriate similarity measure. We also test the search engine's performance on a benchmark document collection (**the Cranfield dataset**) and set of questions and present the results for the same.
 
 ## Some Basics of Informattion Retrieval
